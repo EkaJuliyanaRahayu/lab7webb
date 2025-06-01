@@ -287,6 +287,71 @@ maka, akan dimuculkan halaman login.
 
 ![Screenshot 2025-03-27 110319](https://github.com/user-attachments/assets/6615f0d3-44e1-461e-87c7-ac9ec7cb505f)
 
+# Praktikum 5 Pagination dan Pencarian
+
+Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi kode pada method `admin_index` seperti berikut.
+```
+public function admin_index()
+{
+$title = 'Daftar Artikel';
+$q = $this->request->getVar('q') ?? '';
+$model = new ArtikelModel();
+$data = [
+'title' => $title,
+'q' => $q,
+'artikel' => $model->like('judul', $q)->paginate(10), # data
+dibatasi 10 record per halaman
+'pager' => $model->pager,
+];
+return view('artikel/admin_index', $data);
+}
+```
+<pTambahkan form pencarian di Views/artikel/admin_index.php </p>
+
+```
+<form method="get" class="form-search">
+<input type="text" name="q" value="<?= $q; ?>" placeholder="Cari data">
+<input type="submit" value="Cari" class="btn btn-primary">
+</form>
+```
+<p>pada link pager ubah seperti berikut.</p>
+
+```
+<?= $pager->only(['q'])->links(); ?>
+```
+![Screenshot 2025-05-31 211907](https://github.com/user-attachments/assets/167bc67b-872c-404e-857f-43f5acbe55ae)
+
+# Praktikum 6 Upload File Gambar
+
+kembali ke Controller Artikel pada project sebelumnya, sesuaikan kode pada method
+add
+
+![Screenshot 2025-06-01 225332](https://github.com/user-attachments/assets/76afaf3a-e96c-4649-9126-ef9abd8ff8ec)
+
+pada file views/artikel/form_add.php tambahkan field input file
+
+```
+<p>
+<input type="file" name="gambar">
+</p>
+```
+sesuaikan tag form dengan menambahkan ecrypt type
+
+```
+<form action="" method="post" enctype="multipart/form-data">
+```
+
+## Hasil
+
+![Screenshot 2025-05-31 212518](https://github.com/user-attachments/assets/cab3d054-71a8-4ef5-a986-71092dfe6510)
+
+Tampilan gambar pada artikel
+
+![Screenshot 2025-06-01 195701](https://github.com/user-attachments/assets/6476315e-66ef-48fe-a890-b8c84976ac59)
+
+
+
+
 
 
 
