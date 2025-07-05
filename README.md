@@ -242,7 +242,7 @@ Buat file artikel_terkini.php di dalam app/Views/components/
 • Ubah View Cell agar hanya menampilkan post dengan kategori tertentu.
 ![ss25](https://github.com/user-attachments/assets/812bfedc-e717-4b4f-9226-a8db7e2dd649)
 
-# Praktikum4
+# Praktikum 4
 Membuat Tabel: User Login
 
 ```
@@ -301,7 +301,8 @@ maka, akan dimuculkan halaman login.
 
 ![Screenshot 2025-03-27 110319](https://github.com/user-attachments/assets/6615f0d3-44e1-461e-87c7-ac9ec7cb505f)
 
-# Praktikum 5 Pagination dan Pencarian
+# Praktikum 5 
+## Pagination dan Pencarian
 
 Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi kode pada method `admin_index` seperti berikut.
 ```
@@ -335,7 +336,8 @@ return view('artikel/admin_index', $data);
 ```
 ![Screenshot 2025-05-31 211907](https://github.com/user-attachments/assets/167bc67b-872c-404e-857f-43f5acbe55ae)
 
-# Praktikum 6 Upload File Gambar
+# Praktikum 6 
+## Upload File Gambar
 
 kembali ke Controller Artikel pada project sebelumnya, sesuaikan kode pada method
 add
