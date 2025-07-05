@@ -5,11 +5,14 @@
 | Mata Kuliah | Pemrograman Web2 |
 
 ## Daftar Isi
-- [Praktikum 1](#praktikum1)
-- [Praktikum 2](#praktikum2)
-- [Praktikum 3](#praktikum3)
-- [Praktikum 4](#praktikum4)
-- [Praktikum 5](#praktikum5)
+
+## Daftar Isi
+- [Praktikum 1](#praktikum-1)
+- [Praktikum 2](#praktikum-2)
+- [Praktikum 3](#praktikum-3)
+- [Praktikum 4](#praktikum-4)
+- [Praktikum 5](#praktikum-5)
+
 
 # Praktikum 1
 ## Pertanyaan dan Tugas
