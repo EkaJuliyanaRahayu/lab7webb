@@ -11,13 +11,7 @@
 - [Praktikum 4](#praktikum-4)
 - [Praktikum 5](#praktikum-5)
 - [Praktikum 6](#praktikum-6)
-- [Praktikum 7](#praktikum-7)
-- [Praktikum 8](#praktikum-8)
-- [Praktikum 9](#praktikum-9)
-- [Praktikum 10](#praktikum-10)
-- [Praktikum 11](#praktikum-11)
   
-
 # Praktikum 1
 ## Pertanyaan dan Tugas
 <p>Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga semua
